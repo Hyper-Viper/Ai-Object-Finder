@@ -1,0 +1,28 @@
+function setup(){
+    canvas = createCanvas(550, 450);
+    canvas.parent("canvas");
+}
+
+function f0cus(){
+    if (obj_name.value < 1){
+        lbl_obj.style.cursor = "default";
+        lbl_obj.style.animation = "focus 0.1s";
+        setTimeout(function(){
+            lbl_obj.style.marginTop = "0%";
+            lbl_obj.style.borderBottomLeftRadius = "0px";
+            lbl_obj.style.animation = "";
+        }, 100);
+    }
+}
+
+function b1ur(){
+    if (obj_name.value < 1){
+        lbl_obj.style.cursor = "text"
+        lbl_obj.style.animation = "blur 0.1s";
+        setTimeout(function(){
+            lbl_obj.style.marginTop = "1.55%";
+            lbl_obj.style.borderBottomLeftRadius = "5px";
+            lbl_obj.style.animation = "";
+        }, 100);
+    }
+}
